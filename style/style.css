@@ -1,0 +1,366 @@
+@import "fonts.css";
+@import "normalize.css";
+@import "variables.css";
+
+body {
+    font-family: "Lato-Regular";
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+.main-nav__wrapper {
+    background-color: var(--brand-black);
+}
+
+.main-nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-list {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.site-list__item {
+    list-style-type: none;
+}
+
+.site-list__link svg {
+    padding: 22px;
+}
+
+.site-list__link--hover:hover path {
+    fill: var(--brand-pink);
+}
+
+
+/* Main */
+/* page-brand */
+
+.page-brand {
+    min-height: 765px;
+    background-color: #F1E4E6;
+}
+
+.page-brand_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-brand__image {
+    display: flex;
+    align-content: flex-end;
+}
+
+.page-brand__image img {
+    display: block;
+}
+
+.page-brand__content {
+    width: 50%;
+}
+
+.content__text {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 43px;
+
+    position: relative;
+
+    padding-left: 25px;
+    margin: 0;
+
+    text-transform: uppercase;
+}
+
+.content__text::before {
+    content: "";
+
+    width: 12px;
+    height: 100%;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    background-color: var(--brand-pink);
+}
+
+.content__text--small {
+    font-size: 32px;
+}
+
+.text-pink {
+    color: var(--brand-pink);
+}
+
+/* page-category */
+
+.page-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    margin-top: 65px;
+}
+
+.banner--small {
+    width: 31%;
+    height: auto;
+
+    min-width: 230px;    
+
+    position: relative;
+}
+
+.banner--small img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-badge {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+ 
+    background-color: rgba(33, 22, 22, 0.7);
+    z-index: 2;
+}
+
+.banner-badge__wrapper {
+    margin: auto;
+}
+
+.banner-badge__info {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    margin: 0;
+
+    text-transform: uppercase;
+
+    color: var(--brand-white);
+}
+
+.banner-badge__category {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    margin: 0;
+
+    text-transform: uppercase;
+}
+
+.banner--wide {
+    position: relative;
+
+    margin-top: 3%;
+
+    width: 100%;
+    height: auto;
+
+    min-width: 700px;   
+}
+
+.banner--wide img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* page-fetured */
+
+.page-fetured {
+    margin-top: 96px;
+}
+
+.fetured-header {
+    text-align: center;
+}
+
+.fetured-header__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.fetured-header__description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: var(--brand-gray);
+}
+
+.fetured-item__wrapper {
+    margin-top: 50px;
+
+    min-height: 1193px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.fetured-item {
+    width: 360px;
+    min-height: 582px;
+
+    background-color: #F8F8F8;
+}
+
+.fetured-item__image {
+    position: relative;
+    height: 420px;
+}
+
+.fetured-item__image--hover {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(33, 22, 22, 0.7);
+    z-index: 2;
+}
+
+.feture-item__button {
+    position: relative;
+    display: block;
+
+    margin: auto;
+
+    width: 140px;
+    height: 45px;
+
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.button-pink {
+    width: 212px;
+    height: 48px;
+
+    text-align: center;
+
+    margin: 50px auto 0;
+
+    color: var(--brand-pink);
+    border-color: var(--brand-pink);
+}
+
+
+.button-pink:hover {
+    color: var(--brand-white);
+    background-color: var(--brand-pink);
+}
+
+.button-basket__icon {
+    padding-left: 18px;
+}
+
+.button-basket__icon::before {
+    content: "";
+
+    background-image: url("../graphic/svg/basket_icon_button.svg");
+    width: 26px;
+    height: 24px;
+
+    position: absolute;
+    top: 10px;
+    left: 13px;
+}
+
+.fetured-item:hover .fetured-item__image--hover{
+    display: flex;
+}
+
+.feture-item_info {
+    margin-left: 15px;
+}
+.fetured-item__description {
+    color: var(--brand-gray);
+}
+
+
+/* advantages */
+
+.advantages {
+    min-height: 340px;
+
+    margin-top: 95px;
+
+    background-color:var(--brand-black);
+}
+
+.adventages__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adventage {
+    width: 360px;
+    min-height: 340px;
+
+    display: flex;
+}
+
+.adventage__block {
+    margin: auto;
+}
+
+.adventage__block img{
+    display: block;
+    margin: 0 auto;
+}
+
+.adventage_title {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+
+    color: var(--brand-white);
+}
+
+.adventage__description {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+
+    margin: 0;
+
+    color: var(--brand-white);
+}
+
