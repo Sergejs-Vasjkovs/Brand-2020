@@ -45,7 +45,7 @@ body {
 .main-nav__search {
     display: flex;
     justify-content: flex-start;
-    width: 30%;
+
     cursor: pointer;
 }
 
@@ -109,8 +109,6 @@ body {
 }
 
 .order-total__icon {
-    /* display: none; */
-
     width: 18px;
     height: 18px;
 
@@ -216,8 +214,6 @@ body {
 
 .menu-modal--show {
     display: block;
-    /* animation-name: slide;
-    animation-duration: 0.6s; */
 }
 
 .drop-down__close-button {
@@ -345,11 +341,12 @@ body {
     left: 0;
 
     background-color: rgba(33, 22, 22, 0.7);
+
     z-index: 2;
 }
 
 .banner-badge__wrapper:hover {
-    background-color: rgba(33, 22, 22, 0.8);
+    background: radial-gradient(rgba(33, 22, 22, 0.7),rgba(33, 22, 22, 0.8));
 }
 
 .banner-badge__info {
@@ -435,63 +432,71 @@ body {
 .fetured-item__wrapper {
     margin-top: 50px;
 
-    min-height: 1193px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
 }
 
 .fetured-item {
+    display: block;
+
+    position: relative;
+
     width: 360px;
     min-height: 582px;
+
+    margin-bottom: 30px;
 
     background-color: var(--brand-gray-light);
 }
 
-.fetured-item__image {
-    position: relative;
-    height: 420px;
-}
-
-
-.feture-item_info {
-    margin-left: 15px;
-}
-
-.fetured-item__title {
-    text-transform: uppercase;
-}
-
-.fetured-item__description {
-    color: var(--brand-gray);
-}
-
-
-/* Button Add to Card */
-
-.fetured-item__image--hover {
-    display: none;
-
-    width: 100%;
-    height: 100%;
+.fetured-item:hover::after {
+    content: "";
 
     position: absolute;
 
     top: 0;
     left: 0;
 
-    background-color: rgba(33, 22, 22, 0.7);
+    width: 100%;
+    height: 420px;
+    
+    background-color: rgba(33, 22, 22, 0.7);    
     z-index: 2;
 }
 
-.feture-item__button {    
+.fetured-item__image {
+    display: block;
+}
+
+.feture-item_info {
+    padding: 15px;
+}
+
+.fetured-item__title {
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.fetured-item__description {
+    margin: 15px 0;
+    color: var(--brand-gray);
+}
+
+/* Button Add to Card */
+
+.button-position {
+    position: absolute;
+    top: 185px;
+    left: 0;
+    right: 0;
+}
+
+.feture-item__button {
+    display: none;
     font-size: 14px;
 
-    position: relative;
-    display: block;
-
-    margin: auto;
+    margin: 0 auto;
 
     min-width: 140px;
     padding: 15px 25px;
@@ -501,26 +506,30 @@ body {
     background-color: transparent;
 
     cursor: pointer;
+
+    z-index: 3;
+}
+
+.fetured-item:hover .feture-item__button {
+    display: block;
 }
 
 .button-basket__icon {
-    padding-left: 18px;
+    padding-left: 25px;
 }
 
 .button-basket__icon::before {
     content: "";
 
     background-image: url("../graphic/svg/basket_icon_button.svg");
-    width: 26px;
-    height: 24px;
+    width: 28px;
+    height: 26px;
+
+    background-repeat: no-repeat;
 
     position: absolute;
     top: 10px;
-    left: 13px;
-}
-
-.fetured-item:hover .fetured-item__image--hover {
-    display: flex;
+    left: 16px;
 }
 
 .feture-item__button:hover {
@@ -535,6 +544,10 @@ body {
     background-color: var(--brand-gray);
 }
 
+/* .feture-item__button:hover,
+.feture-item__button:active .fetured-item__link:hover::after {
+    display: block;
+} */
 
 /* Button - Browse all */
 
@@ -635,9 +648,9 @@ body {
 .review-subscribe::after {
     content: "";
 
-    background-image: url("../graphic/img/bottom_bkg.jpg");
+    background-image: url("../graphic/img/bottom_img.jpg");
     background-repeat: no-repeat;
-    background-position: center 20%;
+    background-position: center;
     background-size: cover;
     opacity: 0.3;
 
