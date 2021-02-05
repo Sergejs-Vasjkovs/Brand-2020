@@ -139,112 +139,88 @@
     </header>
 
     <main>
-        <section class="page-brand">
-            <div class="page-brand_wrapper container">
+        <section class="page-breadcrumbs">
+            <div class="page-breadcrumbs__wrapper container">
 
-                <img class="page-brand__image" width="385" height="765" src="graphic/img/Cover_title-img.png"
-                    alt="Page brand image">
+                <span class="page-breadcrumbs__title">New Arrivals</span>
 
-                <h1 class="page-brand__text">The Brand
-                    <span class="page-brand__text--small">of luxerious
-                        <span class="text-pink">fashion</span>
-                    </span>
-                </h1>
+                <ul class="page-breadcrumbs__list">
+                    <li class="breadcrumbs-list__item">
+                        <a href="#" class="breadcrumbs-list__link">Home</a>
+                    </li>
+                    <li class="breadcrumbs-list__item">
+                        <a href="#" class="breadcrumbs-list__link">Men</a>
+                    </li>
+                    <li class="breadcrumbs-list__item">
+                        <a href="#" class="breadcrumbs-list__link">New arrivlas</a>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section class="page-category container">
-            <div class="category__wrapper">
+        <section class="page-filter container">
 
-                <a href=# class="banner-link">
-                    <div class="category__banner banner--man">
-                        <div class="banner-badge__text">
-                            <span class="banner-badge__info">30% off</span>
-                            <h3 class="banner-badge__category text-pink">For women</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href=# class="banner-link">
-                    <div class="category__banner banner--woman">
-                        <div class="banner-badge__text">
-                            <span class="banner-badge__info">Hot deal</span>
-                            <h3 class="banner-badge__category text-pink">For men</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href=# class="banner-link">
-                    <div class="category__banner banner--kids">
-                        <div class="banner-badge__text">
-                            <span class="banner-badge__info">New arrivals</span>
-                            <h3 class="banner-badge__category text-pink">For kids</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href=# class="banner-link banner-logn">
-                    <div class="category__banner banner--accesories">
-                        <div class="banner-badge__text">
-                            <span class="banner-badge__info">Luxirous & trendy</span>
-                            <h3 class="banner-badge__category text-pink">Accesories</h3>
-                        </div>
-                    </div>
-                </a>
+            <div class="filter__drop-down">
+                <button class="drop-down__button">
+                    <span class="drop-down__button-name">Filter</span>
+                    <svg class="drop-down__button-icon" width="15" height="10" viewBox="0 0 15 10"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                    </svg>
+                </button>
+                <div class="drop-down__content">
+                    <a href="#" class="drop-down__link--header">Category</a>
+                    <a href="#" class="drop-down__link">Accessories</a>
+                    <a href="#" class="drop-down__link">Bags</a>
+                    <a href="#" class="drop-down__link">Denim</a>
+                    <a href="#" class="drop-down__link">Hoodies & Sweatshirts</a>
+                    <a href="#" class="drop-down__link">Jackets & Coats</a>
+                    <a href="#" class="drop-down__link">Polos</a>
+                    <a href="#" class="drop-down__link">Shirts</a>
+                    <a href="#" class="drop-down__link">Shoes</a>
+                    <a href="#" class="drop-down__link">Sweaters & Knits</a>
+                    <a href="#" class="drop-down__link">T-Shirts</a>
+                    <a href="#" class="drop-down__link">Tanks</a>
+                    <a href="#" class="drop-down__link--header">Brand</a>
+                    <a href="#" class="drop-down__link--header">Designer</a>
+                </div>
             </div>
 
-            <!-- старая реализация с тэгом img -->
-            <!-- <div class="category__wrapper">
-                <div class="category__banner banner--man">
-                    <a href=# class="banner-link">
-                        <img width="360" height="280" src="graphic/img/product_for-women.jpg" alt="Products for women">
-                        <div class="banner-badge__wrapper">
-                            <span class="banner-badge__info">30% off</span>
-                            <h3 class="banner-badge__category text-pink">For women</h3>
-                        </div>
-                    </a>
-                </div>
+            <div class="sort__drop-down">
 
-                <div class="category__banner banner--woman">
-                    <a href=# class="banner-link">
-                        <img width="360" height="280" src="graphic/img/product_for-men.jpg" alt="Products for women">
-                        <div class="banner-badge__wrapper">
-                            <span class="banner-badge__info">Hot deal</span>
-                            <h3 class="banner-badge__category text-pink">For men</h3>
-                        </div>
-                    </a>
-                </div>
+                <!-- TO DO тут форма нужна?  -->
+                <form action="#" method="POST" class="sort__block">
+                    <select class="sort__list sort--trends" name="trends-sort">
+                        <option value="trend">Trending now</option>
+                        <option value="spring">Spring collection</option>
+                        <option value="winter">Winter collection</option>
+                        <option value="sales">Top sales</option>
+                        <option value="discount">Discount</option>
+                    </select>
 
-                <div class="category__banner banner--kids">
-                    <a href=# class="banner-link">
-                        <img width="360" height="280" src="graphic/img/product_for-kids.jpg" alt="Products for women">
-                        <div class="banner-badge__wrapper">
-                            <span class="banner-badge__info">New arrivals</span>
-                            <h3 class="banner-badge__category text-pink">For kids</h3>
-                        </div>
-                    </a>
-                </div>
+                    <select class="sort__list sort--size" name="size-sort">
+                        <option value="size">Size</option>
+                        <option value="spring">xs</option>
+                        <option value="winter">s</option>
+                        <option value="sales">m</option>
+                        <option value="sales">l</option>
+                        <option value="sales">xl</option>
+                    </select>
 
-                <div class="category__banner banner--accesories">
-                    <a href=# class="banner-link">
-                        <img width="1140" height="180" src="graphic/img/product_accesories.jpg" alt="Accoseriese">
-                        <div class="banner-badge__wrapper">
-                            <span class="banner-badge__info">Luxirous & trendy</span>
-                            <h3 class="banner-badge__category text-pink">Accesories</h3>
-                        </div>
-                    </a>
-                </div>
-            </div> -->
+                    <select class="sort__list sort--price" name="price-sort">
+                        <option value="size">Price</option>
+                        <option value="size">0-50 &euro;</option>
+                        <option value="spring">51-100 &euro;</option>
+                        <option value="winter">101-150 &euro;</option>
+                        <option value="sales">151 &euro;</option>
+                    </select>
+                </form>
+            </div>
         </section>
 
-        <section class="page-fetured container">
-            <div class="fetured-header">
-                <h2 class="fetured-header__title">Fetured Items</h2>
-                <p class="fetured-header__description">Shop for items based on what we featured in this week</p>
-            </div>
-
+        <section class="container">
             <div class="fetured-item__wrapper">
-
                 <a href="#" class="fetured-item">
                     <img class="fetured-item__image" width="360" height="420"
                         src="graphic/img/Fetured_ElleryCapsule.jpg" alt="Product description">
@@ -328,8 +304,79 @@
                         <span class="button-basket__icon">Add to Cart</span>
                     </button>
                 </a>
+
+                <a href="#" class="fetured-item">
+                    <img class="fetured-item_image" width="360" height="420"
+                        src="graphic/img/Fetured_ElleryCapsule-7.jpg" alt="Product description">
+                    <div class="feture-item_info">
+                        <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
+                        <p class="fetured-item__description">Known for her sculptural takes on traditional
+                            tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="fetured-item__price text-pink">$52.00</span>
+                    </div>
+                    <button type="submit" class="feture-item__button button-position">
+                        <span class="button-basket__icon">Add to Cart</span>
+                    </button>
+                </a>
+
+                <a href="#" class="fetured-item">
+                    <img class="fetured-item_image" width="360" height="420"
+                        src="graphic/img/Fetured_ElleryCapsule-8.jpg" alt="Product description">
+                    <div class="feture-item_info">
+                        <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
+                        <p class="fetured-item__description">Known for her sculptural takes on traditional
+                            tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="fetured-item__price text-pink">$52.00</span>
+                    </div>
+                    <button type="submit" class="feture-item__button button-position">
+                        <span class="button-basket__icon">Add to Cart</span>
+                    </button>
+                </a>
+
+                <a href="#" class="fetured-item">
+                    <img class="fetured-item_image" width="360" height="420"
+                        src="graphic/img/Fetured_ElleryCapsule-9.jpg" alt="Product description">
+                    <div class="feture-item_info">
+                        <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
+                        <p class="fetured-item__description">Known for her sculptural takes on traditional
+                            tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="fetured-item__price text-pink">$52.00</span>
+                    </div>
+                    <button type="submit" class="feture-item__button button-position">
+                        <span class="button-basket__icon">Add to Cart</span>
+                    </button>
+                </a>
             </div>
-            <button href="#" class="button-pink">Browse All Product</button>
+
+            <div class="fetured-pagination">
+                <a href="#" class="pagination__item pagination-arrow__left"></a>
+                <a href="#" class="pagination__item pagination__active-links">1</a>
+                <a href="#" class="pagination__item">2</a>
+                <a href="#" class="pagination__item">3</a>
+                <a href="#" class="pagination__item">4</a>
+                <a href="#" class="pagination__item">5</a>
+                <a href="#" class="pagination__item">6</a>
+
+                <!-- тут я не совсем понимаю, как это реализовать... 
+                видимо через display: none. и через js как-то все переключается -->
+
+                <!-- <a href="#" class="pagination__item">7</a>
+                <a href="#" class="pagination__item">8</a>
+                <a href="#" class="pagination__item">9</a>
+                <a href="#" class="pagination__item">10</a>
+                <a href="#" class="pagination__item">11</a>
+                <a href="#" class="pagination__item">12</a>
+                <a href="#" class="pagination__item">13</a>
+                <a href="#" class="pagination__item">14</a>
+                <a href="#" class="pagination__item">15</a>
+                <a href="#" class="pagination__item">16</a>
+                <a href="#" class="pagination__item">17</a>
+                <a href="#" class="pagination__item">18</a>
+                <a href="#" class="pagination__item">19</a> -->
+
+                <a href="#" class="pagination__item">20</a>
+                <a href="#" class="pagination__item pagination-arrow__right"></a>
+            </div>
         </section>
 
         <section class="advantages">
@@ -436,5 +483,4 @@
     </footer>
     <script src="js/show-menu.js"></script>
 </body>
-
 </html>
