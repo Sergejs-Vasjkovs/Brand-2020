@@ -1,0 +1,13 @@
+Я стили всех outline прописал глобально, вначале css.
+насколько это правильно? или лучше прописывать в каждом классе отдельно?
+например делать миксин и засовывать его в нужный класс?
+
+вы написали:
+Здесь стоит использовать button
+<span class="add-to-cart__text">Add to Cart</span>
+
+но у меня он обернут в button, span для оформления и иконки в виде псевдо элемента.
+<button type="submit" class="feture-item__button button-position">
+<span class="button-basket__icon">Add to Cart</span>
+</button>
+

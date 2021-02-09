@@ -4,16 +4,24 @@
 @import "variables.css";
 @import "visually-hidden.css";
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 body {
     font-family: "lato";
     font-weight: 400;
+    font-style: normal;
     font-size: 16px;
+}
+
+a:focus,
+button:focus,
+input:focus {
+    outline: none
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 1px solid var(--brand-pink);
+    box-shadow: 0 0 10px var(--brand-pink);
 }
 
 .container {
@@ -65,11 +73,6 @@ body {
     cursor: pointer;
 }
 
-.button-search__input:focus,
-.button-search__input:active {
-    outline: none;
-}
-
 .button-search__input--show {
     display: block;
 }
@@ -96,10 +99,6 @@ body {
     border: none;
 
     background-color: transparent;
-}
-
-.main-nav_button:focus {
-    outline: none;
 }
 
 .nav-button {
@@ -266,10 +265,6 @@ body {
     background-color: var(--brand-gray);
 }
 
-.drop-down__close-button:focus {
-    outline: none;
-}
-
 .menu__list {
     padding: 40px;
 }
@@ -309,44 +304,31 @@ body {
 
 
 /* page-category */
-/* решение с гридами и background-image */
 
 .category__wrapper {
     margin-top: 65px;
 
-    display: grid;
-    grid-gap: 30px;
-    grid-template: repeat(2, auto) / repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .banner-link {
-    display: flex;
-    width: 100%;
-    height: 18vw; /* Какое значение тут надо задать? */
-}
-
-.category__banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 100%;
+    width: 32%;
+    height: 260px;
 
     position: relative;
-  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    z-index: -2;
 }
 
-.banner-link {
-    position: relative;
-}
-
-.category__banner::after {
+.banner-link::after {
     content: "";
 
     position: absolute;
@@ -358,12 +340,14 @@ body {
     height: 100%;
 
     background-color: rgba(33, 22, 22, 0.7);
-    z-index: -1;
+}
+
+.banner-link:hover::after {
+    background: radial-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.8));
 }
 
 .banner--man {
-    background-image: url("../graphic/img/product_for-men.jpg");
-    
+    background-image: url("../graphic/img/product_for-men.jpg"); 
 }
 
 .banner--woman {
@@ -375,124 +359,39 @@ body {
 }
 
 .banner--accesories {
-    height: 16vw;
     background-image: url("../graphic/img/product_accesories.jpg");
-}
-
-.banner-badge__text {
-    text-align: center;
-    color: white;
-}
-
-.banner-logn {
-    grid-column: 1/-1;
-
-}
-
-/* 
-.category__wrapper {
-    margin-top: 65px;
-
-    display: grid;
-    grid-gap: 30px;
-    grid-template: repeat(2, auto) / repeat(3, auto);
-}
-
-.category__banner {
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.category__banner img {
-    display: block;
-
+    
     width: 100%;
-    height: auto;
-}
+    height: 180px;
 
-.banner--accesories {
-    grid-column: 1/-1;
-}
-
-.banner-badge__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    background-color: rgba(33, 22, 22, 0.7);
-
-    z-index: 2;
-}
-
-.banner-badge__wrapper:hover {
-    background: radial-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.8));
-} */
-
-.banner-link:hover .category__banner::after {
-    background: radial-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.8));
+    margin-top: 20px;
 }
 
 .banner-badge__info {
     font-size: 16px;
     line-height: 19px;
+    text-align: center;
 
     margin: 0;
 
     text-transform: uppercase;
 
     color: var(--brand-white);
+
+    z-index: 1;
 }
 
 .banner-badge__category {
     font-size: 24px;
     font-weight: 700;
+    text-align: center;
 
     margin: 0;
 
     text-transform: uppercase;
+
+    z-index: 1;
 }
-
-@media (max-width: 768px) {
-    .category__wrapper {
-        grid-gap: 15px;
-    }
-
-    .banner-badge__info {
-        font-size: 10px;
-    }
-
-    .banner-badge__category {
-        font-size: 16px;
-    }
-
-}
-
-@media (max-width: 375px) {
-    .category__wrapper {
-        grid-template: repeat(2, auto) / repeat(1, auto);
-    }
-
-    .banner--accesories img {
-        height: 110px;
-        object-fit: cover;
-    }
-
-    .banner-badge__info {
-        font-size: 16px;
-    }
-
-    .banner-badge__category {
-        font-size: 24px;
-    }
-} 
 
 
 /* page-fetured */
@@ -851,12 +750,10 @@ body {
 }
 
 .subscribe__button:hover {
-    outline: none;
     background-color: var(--brand-pink-dark);
 }
 
 .subscribe__button:active {
-    outline: none;
     background-color: var(--brand-gray);
 }
 
@@ -1101,7 +998,6 @@ body {
     background-color: transparent;
 
     border: none;
-    outline: none;
     cursor: pointer;
 }
 
@@ -1262,7 +1158,6 @@ body {
 
     padding: 0;
 
-    outline: none;
     border: none;
     background-color: var(--brand-gray-light);
 }
@@ -1552,6 +1447,28 @@ body {
     border: 1px solid var(--brand-gray);
 }
 
+.radio-button {
+    width: 17px;
+    height: 17px;
+}
+
+input[type=checkbox] { 
+    vertical-align: middle; 
+    position: relative; 
+    bottom: 1px; 
+} 
+
+.radio-button__header {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 25px;
+
+    bottom: 10px;
+
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
 .adress--input:active {
     color: var(--brand-gray);
 }
@@ -1621,8 +1538,66 @@ body {
     background-color: var(--brand-pink-dark);
 }
 
-.chekout__button:focus {
+.chekout__button:active {
     border-color: var(--brand-gray);
     background-color: var(--brand-gray);
-    outline: none;
+}
+
+
+/* Registration */
+
+.password-description {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    
+    margin: 0;
+
+    color: var(--brand-gray-light);
+}
+
+.registration__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 65px;    
+}
+
+.registration-block {
+    width: 360px;
+}
+
+.registration-info {
+    width: 650px;
+
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.registration-info--header {
+    text-transform: uppercase;
+}
+
+.registration-info__list {
+    list-style: none;
+    line-height: 45px;
+    padding-left: 30px;
+}
+
+.registration-info__item{
+    position: relative;
+}
+
+.registration-info__item::before{
+    content: "";
+
+    width: 20px;
+    height: 16px;
+
+    position: absolute;
+    top: 15px;
+    left: -30px;
+
+    background-image: url("../graphic/svg/check_icon.svg");
+    background-repeat: no-repeat;
 }
