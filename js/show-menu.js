@@ -1,6 +1,6 @@
 var buttonMenu = document.querySelector(".button-menu");
 var menu = document.querySelector(".menu__drop-down");
-var closeMenu = document.querySelector(".drop-down__close-button");
+var closeMenu = document.querySelector(".close-button");
 
 buttonMenu.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -48,6 +48,4 @@ window.addEventListener("keydown", function (evt) {
         }
     }
 });
-
-
 
