@@ -138,54 +138,124 @@
     </header>
 
     <main>
-        <section class="page-brand">
-            <div class="page-brand_wrapper container">
+        <section class="page-breadcrumbs">
+            <div class="page-breadcrumbs__wrapper container container-desctop">
 
-                <picture>
-                    <source media="(max-width:992px)" srcset="graphic/img/Cover_title-img-992px.png">
-                    <img class="page-brand__image" src="graphic/img/Cover_title-img.png" alt="Flowers"
-                        style="width:auto;">
-                </picture>
+                <span class="page-breadcrumbs__title">New Arrivals</span>
 
-                <h1 class="page-brand__text">The Brand
-                    <span class="page-brand__text--small">of luxerious
-                        <span class="text-pink">fashion</span>
-                    </span>
-                </h1>
+                <ul class="page-breadcrumbs__list">
+                    <li class="breadcrumbs-list__item">
+                        <a href="#" class="breadcrumbs-list__link">Home</a>
+                    </li>
+                    <li class="breadcrumbs-list__item">
+                        <a href="#" class="breadcrumbs-list__link">Men</a>
+                    </li>
+                    <li class="breadcrumbs-list__item">
+                        <a href="#" class="breadcrumbs-list__link">New arrivlas</a>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section class="page-category container">
+        <section class="page-filter container container-desctop">
 
-            <div class="category__wrapper">
-                <a href=# class="banner-link banner--man">
-                    <span class="banner-badge__info">30% off</span>
-                    <h3 class="banner-badge__category text-pink">For women</h3>
-                </a>
+            <div class="filter__drop-down">
+                <button class="drop-down__button">
+                    <span class="drop-down__button-name">Filter</span>
+                    <svg class="drop-down__button-icon" width="15" height="10" viewBox="0 0 15 10"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                    </svg>
+                </button>
+                <div class="drop-down__content">
+                    <a href="#" class="drop-down__link--header">Category</a>
+                    <a href="#" class="drop-down__link">Accessories</a>
+                    <a href="#" class="drop-down__link">Bags</a>
+                    <a href="#" class="drop-down__link">Denim</a>
+                    <a href="#" class="drop-down__link">Hoodies & Sweatshirts</a>
+                    <a href="#" class="drop-down__link">Jackets & Coats</a>
+                    <a href="#" class="drop-down__link">Polos</a>
+                    <a href="#" class="drop-down__link">Shirts</a>
+                    <a href="#" class="drop-down__link">Shoes</a>
+                    <a href="#" class="drop-down__link">Sweaters & Knits</a>
+                    <a href="#" class="drop-down__link">T-Shirts</a>
+                    <a href="#" class="drop-down__link">Tanks</a>
+                    <a href="#" class="drop-down__link--header">Brand</a>
+                    <a href="#" class="drop-down__link--header">Designer</a>
+                </div>
+            </div>
 
-                <a href=# class="banner-link banner--woman">
-                    <span class="banner-badge__info">Hot deal</span>
-                    <h3 class="banner-badge__category text-pink">For men</h3>
-                </a>
+            <div class="sort__drop-down align-right">
+                <form class="page-filter__form" action="#" method="POST">
+                    <button id="trends" class="filter__button">
+                        <span class="fiter__button--decore">Trending now</span>
+                        <svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                        </svg>
+                    </button>
 
-                <a href=# class="banner-link banner--kids">
-                    <span class="banner-badge__info">New arrivals</span>
-                    <h3 class="banner-badge__category text-pink">For kids</h3>
-                </a>
+                    <div id="trends--list" class="filter__list">
+                        <input class="filter__list--input" id="select-spring" type="checkbox" value="xsmall">
+                        <label class="filter__list--input-title" for="select-spring">Spring collection</label>
 
-                <a href=# class="banner-link banner--accesories">
-                    <span class="banner-badge__info">Luxirous & trendy</span>
-                    <h3 class="banner-badge__category text-pink">Accesories</h3>
-                </a>
+                        <input class="filter__list--input" id="select-winter" type="checkbox" value="small">
+                        <label class="filter__list--input-title" for="select-winter">Winter collection</label>
+
+                        <input class="filter__list--input" id="select-sales" type="checkbox" value="medium">
+                        <label class="filter__list--input-title" for="select-sales">Top sales</label>
+
+                        <input class="filter__list--input" id="select-discount" type="checkbox" value="large">
+                        <label class="filter__list--input-title" for="select-discount">Discount</label>
+                    </div>
+                </form>
+
+                <form class="page-filter__form" action="#" method="POST">
+                    <button id="size" class="filter__button">
+                        <span class="fiter__button--decore">size</span>
+                        <svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                        </svg>
+                    </button>
+
+                    <div id="size--list" class="filter__list">
+                        <input class="filter__list--input" id="select-xsmall" type="checkbox" value="xsmall">
+                        <label class="filter__list--input-title" for="select-xsmall">xs</label>
+
+                        <input class="filter__list--input" id="select-small" type="checkbox" value="small">
+                        <label class="filter__list--input-title" for="select-small">s</label>
+
+                        <input class="filter__list--input" id="select-medium" type="checkbox" value="medium">
+                        <label class="filter__list--input-title" for="select-medium">m</label>
+
+                        <input class="filter__list--input" id="select-large" type="checkbox" value="large">
+                        <label class="filter__list--input-title" for="select-large">l</label>
+                    </div>
+                </form>
+
+                <form class="page-filter__form" oninput="result.value=(range.value)" action="#" method="POST">
+                    <button id="price" class="filter__button">
+                        <span class="fiter__button--decore">Price</span>
+                        <svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                        </svg>
+                    </button>
+
+                    <div id="price--list" class="filter__list">
+                        <input class="filter__list--range" id="range" type="range" value="1" step="0.1" />
+                        <span class="filter__list--output">Price:
+                            <output name="result" for="range">0</output><span>&nbsp;&#37</span>
+                        </span>
+                    </div>
+                </form>
             </div>
         </section>
 
-        <section class="page-fetured container">
-            <h2 class="fetured-header__title">Fetured Items</h2>
-            <p class="fetured-header__description">Shop for items based on what we featured in this week</p>
-
+        <section class="container">
             <div class="fetured-item__wrapper">
-
                 <a href="#" class="fetured-item">
                     <img class="fetured-item__image" width="360" height="420"
                         src="graphic/img/Fetured_ElleryCapsule.jpg" alt="Product description">
@@ -201,7 +271,7 @@
                 </a>
 
                 <a href="#" class="fetured-item">
-                    <img class="fetured-item__image" width="360" height="420"
+                    <img class="fetured-item_image" width="360" height="420"
                         src="graphic/img/Fetured_ElleryCapsule-2.jpg" alt="Product description">
                     <div class="feture-item_info">
                         <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
@@ -215,7 +285,7 @@
                 </a>
 
                 <a href="#" class="fetured-item">
-                    <img class="fetured-item__image" width="360" height="420"
+                    <img class="fetured-item_image" width="360" height="420"
                         src="graphic/img/Fetured_ElleryCapsule-3.jpg" alt="Product description">
                     <div class="feture-item_info">
                         <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
@@ -229,7 +299,7 @@
                 </a>
 
                 <a href="#" class="fetured-item">
-                    <img class="fetured-item__image" width="360" height="420"
+                    <img class="fetured-item_image" width="360" height="420"
                         src="graphic/img/Fetured_ElleryCapsule-4.jpg" alt="Product description">
                     <div class="feture-item_info">
                         <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
@@ -269,8 +339,76 @@
                         <span class="button-basket__icon">Add to Cart</span>
                     </button>
                 </a>
+
+                <a href="#" class="fetured-item">
+                    <img class="fetured-item_image" width="360" height="420"
+                        src="graphic/img/Fetured_ElleryCapsule-7.jpg" alt="Product description">
+                    <div class="feture-item_info">
+                        <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
+                        <p class="fetured-item__description">Known for her sculptural takes on traditional
+                            tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="fetured-item__price text-pink">$52.00</span>
+                    </div>
+                    <button type="submit" class="feture-item__button button-position">
+                        <span class="button-basket__icon">Add to Cart</span>
+                    </button>
+                </a>
+
+                <a href="#" class="fetured-item">
+                    <img class="fetured-item_image" width="360" height="420"
+                        src="graphic/img/Fetured_ElleryCapsule-8.jpg" alt="Product description">
+                    <div class="feture-item_info">
+                        <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
+                        <p class="fetured-item__description">Known for her sculptural takes on traditional
+                            tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="fetured-item__price text-pink">$52.00</span>
+                    </div>
+                    <button type="submit" class="feture-item__button button-position">
+                        <span class="button-basket__icon">Add to Cart</span>
+                    </button>
+                </a>
+
+                <a href="#" class="fetured-item">
+                    <img class="fetured-item_image" width="360" height="420"
+                        src="graphic/img/Fetured_ElleryCapsule-9.jpg" alt="Product description">
+                    <div class="feture-item_info">
+                        <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
+                        <p class="fetured-item__description">Known for her sculptural takes on traditional
+                            tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="fetured-item__price text-pink">$52.00</span>
+                    </div>
+                    <button type="submit" class="feture-item__button button-position">
+                        <span class="button-basket__icon">Add to Cart</span>
+                    </button>
+                </a>
             </div>
-            <button href="#" class="button-pink">Browse All Product</button>
+
+            <div class="fetured-pagination">
+                <a href="#" class="pagination__item pagination-arrow__left"></a>
+                <a href="#" class="pagination__item pagination__active-links">1</a>
+                <a href="#" class="pagination__item">2</a>
+                <a href="#" class="pagination__item">3</a>
+                <a href="#" class="pagination__item">4</a>
+                <a href="#" class="pagination__item">5</a>
+                <a href="#" class="pagination__item">6</a>
+
+                <!-- <a href="#" class="pagination__item">7</a>
+                <a href="#" class="pagination__item">8</a>
+                <a href="#" class="pagination__item">9</a>
+                <a href="#" class="pagination__item">10</a>
+                <a href="#" class="pagination__item">11</a>
+                <a href="#" class="pagination__item">12</a>
+                <a href="#" class="pagination__item">13</a>
+                <a href="#" class="pagination__item">14</a>
+                <a href="#" class="pagination__item">15</a>
+                <a href="#" class="pagination__item">16</a>
+                <a href="#" class="pagination__item">17</a>
+                <a href="#" class="pagination__item">18</a>
+                <a href="#" class="pagination__item">19</a> -->
+
+                <a href="#" class="pagination__item">20</a>
+                <a href="#" class="pagination__item pagination-arrow__right"></a>
+            </div>
         </section>
 
         <section class="advantages">
