@@ -11,7 +11,7 @@
 
 <body>
     <header class="page-header">
-        <div class="page-header__wrapper container">
+        <div class="page-header__wrapper container container-desctop">
 
             <a class="page-header__logo" href="index.html">
                 <img width="44" height="38" src="graphic/img/Brand_logo_small.png" alt="Brand logo, home page button">
@@ -139,13 +139,12 @@
 
     <main>
         <section class="page-breadcrumbs">
-            <div class="page-breadcrumbs__wrapper container">
+            <div class="page-breadcrumbs__wrapper container container-desctop">
                 <span class="page-breadcrumbs__title">Registration</span>
             </div>
         </section>
 
-
-        <section class="registration__wrapper container">
+        <section class="registration__wrapper container container-desctop">
 
             <div class="registration-block">
                 <form type="post">
@@ -157,13 +156,19 @@
                     <label for="surname"><span class="visually-hidden">Last Name</span></label>
                     <input class="adress--input" type="text" id="surname" placeholder="Last Name">
 
-                    <input class="adress--input radio-button" type="radio" id="postcode" value="male" name="gender">
-                    <label class="radio-button--label" for="postcode"><span
-                            class="radio-button__header">Male</span></label>
+                    <div class="adress-gender__input">
+                        <input class="adress--input radio-button" type="radio" id="male" value="male" name="gender">
+                        <label class="radio-button--label" for="male"><span
+                                class="radio-button__header">Male</span></label>
 
-                    <input class="adress--input radio-button" type="radio" id="postcode" value="female" name="gender">
-                    <label class="radio-button--label" for="postcode"><span
-                            class="radio-button__header">Female</span></label>
+                        <input class="adress--input radio-button" type="radio" id="female" value="female" name="gender">
+                        <label class="radio-button--label" for="female"><span
+                                class="radio-button__header">Female</span></label>
+
+                        <input class="adress--input radio-button female-gender--hide" type="radio" id="other" value="female" name="gender">
+                        <label class="radio-button--label female-gender--hide" for="other"><span
+                                class="radio-button__header">Other</span></label>
+                    </div>
 
                     <span class="shipping__adress">Login details</span>
 
@@ -271,7 +276,7 @@
     </main>
 
     <footer class="page-footer">
-        <div class="page-footer_wrapper container">
+        <div class="page-footer_wrapper container container-desctop">
             <p class="footer__copyright">&copy; 2021 Brand All Rights Reserved.</p>
 
             <div class="footer__social">

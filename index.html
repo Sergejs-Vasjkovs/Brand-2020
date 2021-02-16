@@ -11,7 +11,7 @@
 
 <body>
     <header class="page-header">
-        <div class="page-header__wrapper container">
+        <div class="page-header__wrapper container container-desctop">
 
             <a class="page-header__logo" href="index.html">
                 <img width="44" height="38" src="graphic/img/Brand_logo_small.png" alt="Brand logo, home page button">
@@ -141,8 +141,12 @@
         <section class="page-brand">
             <div class="page-brand_wrapper container">
 
-                <img class="page-brand__image" width="385" height="765" src="graphic/img/Cover_title-img.png"
-                    alt="Page brand image">
+                <picture>
+                    <source media="(max-width:768px)" srcset="graphic/img/Cover_title-img-768px.png">
+                    <source media="(max-width:992px)" srcset="graphic/img/Cover_title-img-992px.png">
+                    <img class="page-brand__image" src="graphic/img/Cover_title-img.png" alt="Flowers"
+                        style="width:auto;">
+                </picture>
 
                 <h1 class="page-brand__text">The Brand
                     <span class="page-brand__text--small">of luxerious
@@ -174,14 +178,12 @@
                     <span class="banner-badge__info">Luxirous & trendy</span>
                     <h3 class="banner-badge__category text-pink">Accesories</h3>
                 </a>
-            </div>  
+            </div>
         </section>
 
         <section class="page-fetured container">
-            <div class="fetured-header">
-                <h2 class="fetured-header__title">Fetured Items</h2>
-                <p class="fetured-header__description">Shop for items based on what we featured in this week</p>
-            </div>
+            <h2 class="fetured-header__title">Fetured Items</h2>
+            <p class="fetured-header__description">Shop for items based on what we featured in this week</p>
 
             <div class="fetured-item__wrapper">
 
@@ -200,7 +202,7 @@
                 </a>
 
                 <a href="#" class="fetured-item">
-                    <img class="fetured-item_image" width="360" height="420"
+                    <img class="fetured-item__image" width="360" height="420"
                         src="graphic/img/Fetured_ElleryCapsule-2.jpg" alt="Product description">
                     <div class="feture-item_info">
                         <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
@@ -214,7 +216,7 @@
                 </a>
 
                 <a href="#" class="fetured-item">
-                    <img class="fetured-item_image" width="360" height="420"
+                    <img class="fetured-item__image" width="360" height="420"
                         src="graphic/img/Fetured_ElleryCapsule-3.jpg" alt="Product description">
                     <div class="feture-item_info">
                         <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
@@ -228,7 +230,7 @@
                 </a>
 
                 <a href="#" class="fetured-item">
-                    <img class="fetured-item_image" width="360" height="420"
+                    <img class="fetured-item__image" width="360" height="420"
                         src="graphic/img/Fetured_ElleryCapsule-4.jpg" alt="Product description">
                     <div class="feture-item_info">
                         <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
@@ -340,7 +342,7 @@
     </main>
 
     <footer class="page-footer">
-        <div class="page-footer_wrapper container">
+        <div class="page-footer_wrapper container container-desctop">
             <p class="footer__copyright">&copy; 2021 Brand All Rights Reserved.</p>
 
             <div class="footer__social">
