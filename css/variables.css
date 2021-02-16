@@ -1,0 +1,16 @@
+:root {
+  /* Color */
+  --brand-black: #222222;
+  --brand-gray: #898989;
+  --brand-gray-light: #E8E8E8;
+  --brand-pink: #F16D7F;
+  --brand-pink-dark: #d34f60;
+  --brand-white: #ffffff;
+
+/* Screens width */
+  --mobile-width: 375px;
+  --tablet-width: 768px;
+  --desktop-width: 1150px;
+}
+
+;
