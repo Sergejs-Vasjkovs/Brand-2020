@@ -863,6 +863,8 @@ input:focus-visible {
 }
 
 .page-breadcrumbs__title {
+    display: block;
+
     font-size: 24px;
     text-transform: uppercase;
 
@@ -1035,6 +1037,7 @@ input:focus-visible {
 
 .filter__drop-down {
     width: 120px;
+    background-color: white;
     z-index: 3;
 }
 
@@ -1540,7 +1543,6 @@ input:focus-visible {
 
 .cart-items__wrapper {
     max-width: 650px;
-    min-width: 505px;
 
     margin-right: 20px;
 }
@@ -1553,7 +1555,6 @@ input:focus-visible {
     position: relative;
 
     width: 100%;
-    min-height: 305px;
 
     margin-bottom: 45px;
 
@@ -1564,7 +1565,6 @@ input:focus-visible {
 
 .cart-item__image {
     display: block;
-    height: auto;
 }
 
 .cart-item__info {
@@ -1801,7 +1801,7 @@ input:focus-visible {
     display: flex;
     justify-content: space-between;
 
-    margin-top: 65px;    
+    margin-top: 40px;    
 }
 
 .registration-block {
@@ -1876,6 +1876,7 @@ input:focus-visible {
     .cart-items__wrapper {
         width: 90%;
         max-width: 902px;
+        margin: 0;
     }
 
     .shipping-block {
@@ -1973,6 +1974,10 @@ input:focus-visible {
         justify-content: space-evenly;
     }
 
+    .subscribe {
+        width: 100%;
+    }
+
     .registration-info {
         font-size: 16px;
     }
@@ -1983,5 +1988,175 @@ input:focus-visible {
 
     .female-gender--hide {
         display: block;
+    }
+
+    .page-breadcrumbs__wrapper {
+        min-height: 150px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .product__description {
+        width: 85%;
+    }
+}
+
+@media (max-width: 740px) {
+    .fetured-item__wrapper {
+        justify-content: center;
+    }
+
+    .page-brand__image {
+        display: none;
+    }
+
+    .page-brand_wrapper {
+        min-height: 375px;
+    }
+
+    .page-brand__text {
+        margin: 0 auto;
+    }
+
+    .cart-item__info--header {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .cart-item__discription {
+        font-size: 16px;
+    }
+
+    .cart-item__image {
+        width: 220px;
+        height: auto;
+    }
+
+    .cart-item__info {
+        padding: 30px 15px 0 15px;
+    }
+
+    .registration__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration-info {
+        width: 360px;
+        margin: 40px 0 0 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 445px;        
+     }
+ 
+     .container-desctop {
+        max-width: 425px;   
+     }
+
+    .button-account,
+    .button-basket {
+        display: none;
+    }
+
+    .category__wrapper {
+        justify-content: center;
+    }
+
+    .banner-link {
+        width: 340px;
+        height: 240px;
+
+        margin-bottom: 15px;
+    }
+
+    .banner--accesories {
+        height: 110px;
+
+        margin: 0;
+    }
+
+    .page-footer_wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .footer__social {
+        margin: 40px auto;
+    }
+
+    .filter__button {
+        padding: 0 10px;
+    }
+
+    .fiter__button--decore {
+        font-size: 12px;
+    }
+
+    .filter__list--input-title {
+        font-size: 12px;
+    }
+
+    .drop-down__button {
+        margin: 15px 0;
+    }
+    
+    .drop-down__button-name {
+        display: none;
+    }
+
+    .drop-down__button-icon {
+        width: 37px;
+        height: 25px;
+    }
+
+    .shopping-cart__wrapper{
+        justify-content: start;
+        align-items: center;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .cart-items__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cart-item__info {
+        padding: 40px 10px 0 10px;
+    }
+
+    .cart-item__info--header {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .cart-item__discription {
+        font-size: 15px;
+    }
+
+    .button__cart {
+        font-size: 12px;
+        text-transform: capitalize;
+    }
+
+    .shipping-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 5%;        
+    }
+
+    .shipping-block__form {
+        width: 90%;
+    }
+
+    .order-chekout {
+        width: 90%;
+        margin-top: 40px;
     }
 }
