@@ -139,6 +139,7 @@
 
     <main>
         <section class="page-breadcrumbs">
+            <h3 class="visualy-hidden">Page navigation</h3>
             <div class="page-breadcrumbs__wrapper container container-desctop">
                 <span class="page-breadcrumbs__title">Shopping cart</span>
             </div>
@@ -147,23 +148,23 @@
         <section class="shopping-cart__wrapper container">
 
             <div class="cart-items__wrapper">
-                
+
                 <div class="cart-items">
                     <img class="cart-item__image" width="260" height="305" src="graphic/img/cart_img-1.jpg"
                         alt="Manto people T-shirt">
                     <div class="cart-item__info">
                         <h3 class="cart-item__info--header">Mango people t-shirt</h3>
-                        <span class="cart-item__discription">Price: <span class="text-pink">$300</span></ы>
-                            <span class="cart-item__discription">Color: Red</span>
-                            <span class="cart-item__discription">Size: XL</span>
-                            <span class="cart-item__discription info--last-child">Quantity:</span>
-                            <select class="cart-item__info--quantity">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
+                        <span class="cart-item__discription">Price: <span class="text-pink">$300</span></span>
+                        <span class="cart-item__discription">Color: Red</span>
+                        <span class="cart-item__discription">Size: XL</span>
+                        <span class="cart-item__discription info--last-child">Quantity:</span>
+                        <select class="cart-item__info--quantity">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
                     </div>
                     <button class="close-button"></button>
                 </div>
@@ -196,7 +197,7 @@
 
             <div class="shipping-block">
 
-                <form class="shipping-block__form" type="post">
+                <form class="shipping-block__form">
                     <p class="shipping__adress">Shipping adress</p>
 
                     <label for="city"><span class="visually-hidden">City</span></label>
@@ -206,7 +207,7 @@
                     <input class="adress--input" type="text" name="state" id="state" placeholder="State">
 
                     <label for="postcode"><span class="visually-hidden">State</span></label>
-                    <input class="adress--input" type="postcode" name="postcode" id="postcode"
+                    <input class="adress--input" type="text" name="postcode" id="postcode"
                         placeholder="Postcode / Zip">
 
                     <button type="submit" class="button__cart button--position">Get a quote</button>
