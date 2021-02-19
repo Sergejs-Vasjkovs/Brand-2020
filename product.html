@@ -138,99 +138,148 @@
     </header>
 
     <main>
-        <section class="page-brand">
-            <div class="page-brand_wrapper container">
+        <section class="page-breadcrumbs">
+            <h3 class="visualy-hidden">Page navigation</h3>
+            <div class="page-breadcrumbs__wrapper container container-desctop">
 
-                <picture>
-                    <source media="(max-width:992px)" srcset="graphic/img/Cover_title-img-992px.png">
-                    <img class="page-brand__image" src="graphic/img/Cover_title-img.png" alt="Flowers"
-                        style="width:auto;">
-                </picture>
+                <span class="page-breadcrumbs__title">New Arrivals</span>
 
-                <h1 class="page-brand__text">The Brand
-                    <span class="page-brand__text--small">of luxerious
-                        <span class="text-pink">fashion</span>
-                    </span>
-                </h1>
+                <ul class="page-breadcrumbs__list">
+                    <li class="breadcrumbs-list__item">
+                        <a href="#" class="breadcrumbs-list__link">Home</a>
+                    </li>
+                    <li class="breadcrumbs-list__item">
+                        <a href="#" class="breadcrumbs-list__link">Men</a>
+                    </li>
+                    <li class="breadcrumbs-list__item">
+                        <a href="#" class="breadcrumbs-list__link">New arrivlas</a>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section class="page-category container">
+        <section class="page-slider">
+            <button class="slider__button">
+                <svg class="slider__button-arrow" width="13" height="23" viewBox="0 0 13 23"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z" />
+                </svg>
+            </button>
 
-            <div class="category__wrapper">
-                <a href=# class="banner-link banner--man">
-                    <span class="banner-badge__info">30% off</span>
-                    <h3 class="banner-badge__category text-pink">For women</h3>
-                </a>
+            <div class="page-slider__wrapper container">
+                <img class="page-slider__image" width="410" height="720" src="graphic/img/slider_foto-1.jpg"
+                    alt="Slider image">
+            </div>
 
-                <a href=# class="banner-link banner--woman">
-                    <span class="banner-badge__info">Hot deal</span>
-                    <h3 class="banner-badge__category text-pink">For men</h3>
-                </a>
+            <button class="slider__button">
+                <svg class="slider__button-arrow" width="13" height="23" viewBox="0 0 13 23"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.299709 19.2499L8.04971 11.4999L0.29971 3.74985L1.84971 0.649852L12.6997 11.4999L1.84971 22.3499L0.299709 19.2499Z" />
+                </svg>
+            </button>
+        </section>
 
-                <a href=# class="banner-link banner--kids">
-                    <span class="banner-badge__info">New arrivals</span>
-                    <h3 class="banner-badge__category text-pink">For kids</h3>
-                </a>
+        <section class="page-product container">
 
-                <a href=# class="banner-link banner--accesories">
-                    <span class="banner-badge__info">Luxirous & trendy</span>
-                    <h3 class="banner-badge__category text-pink">Accesories</h3>
-                </a>
+            <div class="product-description">
+                <span class="product__category">Women collection</span>
+                <span class="product__name">Moschino chear and chic</span>
+                <p class="product__description">Compellingly actualize fully researched processes before proactive
+                    outsourcing. Progressively
+                    syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
+                    core competencies rather than exceptional portals. </p>
+                <span class="product__price">$561</span>
+
+                <div class="sort__drop-down  position-relative">
+                    <form class="page-filter__form" action="#" method="POST">
+                        <button id="trends" class="filter__button">
+                            <span class="fiter__button--decore">Choose color</span>
+                            <svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                            </svg>
+                        </button>
+
+                        <div id="trends--list" class="filter__list">
+                            <input class="filter__list--color" id="select-spring" type="color">
+                            <label class="filter__list--color-title" for="select-spring">choose color</label>
+                        </div>
+                    </form>
+
+                    <form class="page-filter__form" action="#" method="POST">
+                        <button id="size" class="filter__button">
+                            <span class="fiter__button--decore">size</span>
+                            <svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                            </svg>
+                        </button>
+
+                        <div id="size--list" class="filter__list">
+                            <input class="filter__list--input" id="select-xsmall" type="checkbox" value="xsmall">
+                            <label class="filter__list--input-title" for="select-xsmall">xs</label>
+
+                            <input class="filter__list--input" id="select-small" type="checkbox" value="small">
+                            <label class="filter__list--input-title" for="select-small">s</label>
+
+                            <input class="filter__list--input" id="select-medium" type="checkbox" value="medium">
+                            <label class="filter__list--input-title" for="select-medium">m</label>
+
+                            <input class="filter__list--input" id="select-large" type="checkbox" value="large">
+                            <label class="filter__list--input-title" for="select-large">l</label>
+                        </div>
+                    </form>
+
+                    <form class="page-filter__form" action="#" method="POST">
+                        <button id="price" class="filter__button">
+                            <span class="fiter__button--decore">quantity</span>
+                            <svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                            </svg>
+                        </button>
+
+                        <div id="price--list" class="filter__list">
+                            <input class="filter__list--input" id="select-1" type="radio" value="one" name="quantity">
+                            <label class="filter__list--input-title" for="select-1">1</label>
+
+                            <input class="filter__list--input" id="select-2" type="radio" value="two" name="quantity">
+                            <label class="filter__list--input-title" for="select-2">2</label>
+
+                            <input class="filter__list--input" id="select-3" type="radio" value="three" name="quantity">
+                            <label class="filter__list--input-title" for="select-3">3</label>
+
+                            <input class="filter__list--input" id="select-4" type="radio" value="four" name="quantity">
+                            <label class="filter__list--input-title" for="select-4">4</label>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+                <button type="submit" class="button__add-to-cart">
+                    <svg class="button--color" width="27" height="25" viewBox="0 0 27 25"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.9509 23.2667H21.8386C21.2294 23.2667 20.7177 22.7671 20.6735 22.1294C20.629 21.4607 21.1175 20.8785 21.7626 20.8346C21.788 20.8329 21.8145 20.832 21.8405 20.832C22.4575 20.832 22.9743 21.3219 23.0201 21.9487C23.0319 22.1971 22.9914 22.5514 22.736 22.8439L22.73 22.8507L22.7242 22.8575C22.5275 23.0912 22.2607 23.2321 21.9509 23.2667ZM8.21887 23.2604C7.5683 23.2604 7.03906 22.7174 7.03906 22.05C7.03906 21.3832 7.5683 20.8406 8.21887 20.8406C8.86945 20.8406 9.39868 21.3832 9.39868 22.05C9.39868 22.7174 8.86945 23.2604 8.21887 23.2604Z" />
+                        <path
+                            d="M21.876 22.2662C21.921 22.2549 21.9423 22.2339 21.96 22.2129C21.9678 22.2037 21.9756 22.1946 21.9835 22.1855C22.02 22.1438 22.0233 22.0553 22.0224 22.0105C22.0092 21.9044 21.9185 21.8315 21.8412 21.8315C21.8375 21.8315 21.8336 21.8317 21.8312 21.8318C21.7531 21.8372 21.6653 21.9409 21.6719 22.0625C21.6813 22.1793 21.7675 22.2662 21.8392 22.2662H21.876ZM8.21954 22.2599C8.31873 22.2599 8.39935 22.1655 8.39935 22.0496C8.39935 21.9341 8.31873 21.8401 8.21954 21.8401C8.12042 21.8401 8.03973 21.9341 8.03973 22.0496C8.03973 22.1655 8.12042 22.2599 8.21954 22.2599ZM21.9995 24.2662C21.9517 24.2662 21.8878 24.2662 21.8392 24.2662C20.7017 24.2662 19.7567 23.3545 19.6765 22.198C19.5964 20.9929 20.4937 19.9183 21.6953 19.8364C21.7441 19.8331 21.7928 19.8315 21.8412 19.8315C22.9799 19.8315 23.9413 20.7324 24.019 21.8884C24.0505 22.4915 23.8741 23.0612 23.4898 23.5012C23.1055 23.9575 22.5764 24.2177 21.9995 24.2662ZM8.21954 24.2599C7.01532 24.2599 6.03973 23.2709 6.03973 22.0496C6.03973 20.8291 7.01532 19.8401 8.21954 19.8401C9.42371 19.8401 10.3994 20.8291 10.3994 22.0496C10.3994 23.2709 9.42371 24.2599 8.21954 24.2599ZM21.1984 17.3938H9.13306C8.70013 17.3938 8.31586 17.1005 8.20331 16.6775L4.27753 2.24768H1.52173C0.993408 2.24768 0.560547 1.80859 0.560547 1.27039C0.560547 0.733032 0.993408 0.292969 1.52173 0.292969H4.99933C5.43134 0.292969 5.81561 0.586304 5.9281 1.01025L9.85394 15.4391H20.5576L24.1144 7.13379H12.2578C11.7286 7.13379 11.2957 6.69373 11.2957 6.15649C11.2957 5.61914 11.7286 5.17908 12.2578 5.17908H25.5886C25.9091 5.17908 26.2141 5.34192 26.3896 5.61914C26.566 5.89539 26.5984 6.23743 26.4697 6.547L22.0795 16.807C21.9193 17.1653 21.5827 17.3938 21.1984 17.3938Z" />
+                        <path
+                            d="M21.876 22.2662C21.921 22.2549 21.9423 22.2339 21.96 22.2129C21.9678 22.2037 21.9756 22.1946 21.9835 22.1855C22.02 22.1438 22.0233 22.0553 22.0224 22.0105C22.0092 21.9044 21.9185 21.8315 21.8412 21.8315C21.8375 21.8315 21.8336 21.8317 21.8312 21.8318C21.7531 21.8372 21.6653 21.9409 21.6719 22.0625C21.6813 22.1793 21.7675 22.2662 21.8392 22.2662H21.876ZM8.21954 22.2599C8.31873 22.2599 8.39935 22.1655 8.39935 22.0496C8.39935 21.9341 8.31873 21.8401 8.21954 21.8401C8.12042 21.8401 8.03973 21.9341 8.03973 22.0496C8.03973 22.1655 8.12042 22.2599 8.21954 22.2599ZM21.9995 24.2662C21.9517 24.2662 21.8878 24.2662 21.8392 24.2662C20.7017 24.2662 19.7567 23.3545 19.6765 22.198C19.5964 20.9929 20.4937 19.9183 21.6953 19.8364C21.7441 19.8331 21.7928 19.8315 21.8412 19.8315C22.9799 19.8315 23.9413 20.7324 24.019 21.8884C24.0505 22.4915 23.8741 23.0612 23.4898 23.5012C23.1055 23.9575 22.5764 24.2177 21.9995 24.2662ZM8.21954 24.2599C7.01532 24.2599 6.03973 23.2709 6.03973 22.0496C6.03973 20.8291 7.01532 19.8401 8.21954 19.8401C9.42371 19.8401 10.3994 20.8291 10.3994 22.0496C10.3994 23.2709 9.42371 24.2599 8.21954 24.2599ZM21.1984 17.3938H9.13306C8.70013 17.3938 8.31586 17.1005 8.20331 16.6775L4.27753 2.24768H1.52173C0.993408 2.24768 0.560547 1.80859 0.560547 1.27039C0.560547 0.733032 0.993408 0.292969 1.52173 0.292969H4.99933C5.43134 0.292969 5.81561 0.586304 5.9281 1.01025L9.85394 15.4391H20.5576L24.1144 7.13379H12.2578C11.7286 7.13379 11.2957 6.69373 11.2957 6.15649C11.2957 5.61914 11.7286 5.17908 12.2578 5.17908H25.5886C25.9091 5.17908 26.2141 5.34192 26.3896 5.61914C26.566 5.89539 26.5984 6.23743 26.4697 6.547L22.0795 16.807C21.9193 17.1653 21.5827 17.3938 21.1984 17.3938Z" />
+                    </svg>
+                    <span class="add-to-cart__text">Add to Cart</span>
+                </button>
             </div>
         </section>
 
-        <section class="page-fetured container">
-            <h2 class="fetured-header__title">Fetured Items</h2>
-            <p class="fetured-header__description">Shop for items based on what we featured in this week</p>
-
+        <section class="container">
             <div class="fetured-item__wrapper">
-
                 <a href="#" class="fetured-item">
-                    <img class="fetured-item__image" width="360" height="420"
-                        src="graphic/img/Fetured_ElleryCapsule.jpg" alt="Product description">
-                    <div class="feture-item_info">
-                        <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
-                        <p class="fetured-item__description">Known for her sculptural takes on traditional
-                            tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <span class="fetured-item__price text-pink">$52.00</span>
-                    </div>
-                    <button type="submit" class="feture-item__button button-position">
-                        <span class="button-basket__icon">Add to Cart</span>
-                    </button>
-                </a>
-
-                <a href="#" class="fetured-item">
-                    <img class="fetured-item__image" width="360" height="420"
-                        src="graphic/img/Fetured_ElleryCapsule-2.jpg" alt="Product description">
-                    <div class="feture-item_info">
-                        <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
-                        <p class="fetured-item__description">Known for her sculptural takes on traditional
-                            tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <span class="fetured-item__price text-pink">$52.00</span>
-                    </div>
-                    <button type="submit" class="feture-item__button button-position">
-                        <span class="button-basket__icon">Add to Cart</span>
-                    </button>
-                </a>
-
-                <a href="#" class="fetured-item">
-                    <img class="fetured-item__image" width="360" height="420"
-                        src="graphic/img/Fetured_ElleryCapsule-3.jpg" alt="Product description">
-                    <div class="feture-item_info">
-                        <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
-                        <p class="fetured-item__description">Known for her sculptural takes on traditional
-                            tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <span class="fetured-item__price text-pink">$52.00</span>
-                    </div>
-                    <button type="submit" class="feture-item__button button-position">
-                        <span class="button-basket__icon">Add to Cart</span>
-                    </button>
-                </a>
-
-                <a href="#" class="fetured-item">
-                    <img class="fetured-item__image" width="360" height="420"
-                        src="graphic/img/Fetured_ElleryCapsule-4.jpg" alt="Product description">
+                    <img class="fetured-item_image" width="360" height="420"
+                        src="graphic/img/Fetured_ElleryCapsule-7.jpg" alt="Product description">
                     <div class="feture-item_info">
                         <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
                         <p class="fetured-item__description">Known for her sculptural takes on traditional
@@ -244,7 +293,7 @@
 
                 <a href="#" class="fetured-item">
                     <img class="fetured-item_image" width="360" height="420"
-                        src="graphic/img/Fetured_ElleryCapsule-5.jpg" alt="Product description">
+                        src="graphic/img/Fetured_ElleryCapsule-8.jpg" alt="Product description">
                     <div class="feture-item_info">
                         <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
                         <p class="fetured-item__description">Known for her sculptural takes on traditional
@@ -258,7 +307,7 @@
 
                 <a href="#" class="fetured-item">
                     <img class="fetured-item_image" width="360" height="420"
-                        src="graphic/img/Fetured_ElleryCapsule-6.jpg" alt="Product description">
+                        src="graphic/img/Fetured_ElleryCapsule-9.jpg" alt="Product description">
                     <div class="feture-item_info">
                         <h4 class="fetured-item__title">Ellery X M'O capsule</h4>
                         <p class="fetured-item__description">Known for her sculptural takes on traditional
@@ -270,7 +319,6 @@
                     </button>
                 </a>
             </div>
-            <button class="button-pink">Browse All Product</button>
         </section>
 
         <section class="advantages">
